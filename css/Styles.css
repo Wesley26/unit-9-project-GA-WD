@@ -1,0 +1,89 @@
+/**
+Main style sheet
+**/
+
+body {
+  background-color: beige;
+  padding-bottom: 3%;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 25px;
+}
+
+#main-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 5%;
+  margin-right: 5%
+}
+
+/* div Title styling starts here */
+
+#Title {
+  display: grid
+}
+
+#Title img {
+  padding-left: 170px
+}
+
+/* div Reservations styling starts here */
+
+#Reservations {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: space-evenly
+}
+
+#Reservations .reserve-column {
+  display: flex;
+  position: relative;
+  height: 390px;
+  width: 1200px
+}
+
+#Reservations .column {
+  background-color: lightgray;
+  display: grid;
+  margin: 2%;
+  padding: 2%;
+  height: 300px;
+  width: 500px;
+  justify-items: center
+}
+
+#Reservations form {
+  display: grid;
+  height: 150px;
+  width: 150px
+}
+
+/* div Come-Dine-With-Us styling starts here */
+
+#Come-Dine-With-Us {
+  display: grid
+}
+
+#Come-Dine-With-Us #map {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+  padding-left: 726px
+}
+
+/* div Customer-Reviews styling starts here */
+
+#Customer-Reviews {
+  display: grid
+}
+
+#Customer-Reviews .CReview-wrapper {
+  position: relative;
+  display: flex;
+  background-color: lightgray
+}
+
+#Customer-Reviews .CReview-wrapper p {
+  padding-left: 2%
+}

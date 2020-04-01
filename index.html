@@ -1,0 +1,106 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Unit 9 Project</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap"> 
+   <link rel="stylesheet" href="./css/Styles.css">
+</head>
+<body>
+
+  <div id="main-wrapper">
+    <div id="Title">
+         <h1 style="text-align:center">Monk's Cafe</h1>
+         <h4 style="text-align:center">The Coffee Shop</h4>
+
+         <img src="./pics/toms-restaurant.jpg" height="600px">
+    </div>
+
+    <div id="Reservations">
+         <h1 style="text-align:center">Reservations</h1>
+
+        <div class="reserve-column">
+         <div class="column">
+           <!-- Make a reservation column -->
+            <h3 style="text-align:center">Make A Reservation</h3>
+
+            <form>
+              <input type="text" placeholder="Add your name.">
+              <input type="text" placeholder="Add your reserve date.">
+              <button>Confirm Your Reservation</button>
+            </form>
+
+        </div>
+
+        <div class="column">
+          <!-- Existing reservation column -->
+            <h3 style="text-align:center">Existing Reservations</h3>
+
+            <div class="table-wrapper">
+            <table id="Name">
+               <thead>
+               <th>Name</th>
+               </thead>
+               <tbody>
+               <input type="text">
+               <input type="text">
+               <input type="text">
+               <input type="text">
+               <input type="text">
+               </tbody>
+            </table>
+            <table id="Day">
+               <thead>
+               <th>Day</th>
+               </thead>
+               <tbody>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+               </tbody>
+            </table>
+            </div>
+
+        </div>
+       </div>
+
+    </div>
+
+    <div id="Come-Dine-With-Us">
+         <h1 style="text-align:center">Come Dine With Us!</h1>
+         <div id="map"></div>
+
+         <!-- jQuery and google maps API key provided by General Assembly. -->
+         <!--jQuery-->
+         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+         <!--Custom JS-->
+         <script src="./js/main.js"></script>
+         <!--Google Maps-->
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs" async defer></script>
+    </div>
+
+    <div id="Customer-Reviews">
+         <h1 style="text-align:center">Customer Reviews</h1>
+
+      <div class="CReview-wrapper">
+         <img src="./pics/jerry.jpg">
+
+         <p text-align="center">Big lettuce, big carrots, tomatoes like volleyballs.
+            — Jerry Seinfeld, on The BIG Salad
+            <br>
+            <br>
+            This is a great place to come eat! I come for the
+            lettuce, carrots, and sandwiches! - Tom White
+            <br>
+            <br>
+         </p>
+      </div>
+
+
+    </div>
+   </div>
+
+</body>
+</html>
